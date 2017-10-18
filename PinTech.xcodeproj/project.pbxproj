@@ -115,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				9819BBC61F8B0969004EEDA4 /* Main.storyboard */,
+				9819BBC01F8B0969004EEDA4 /* AppDelegate.swift */,
 				9890B6201F9319D500D7AA21 /* Login */,
 				98DC01631F8C5B78008DB961 /* Reservation */,
 				9819BBE51F8BC926004EEDA4 /* Cast */,
@@ -122,9 +123,8 @@
 				9819BBC91F8B0969004EEDA4 /* Assets.xcassets */,
 				9819BBCB1F8B0969004EEDA4 /* LaunchScreen.storyboard */,
 				9819BBCE1F8B0969004EEDA4 /* Info.plist */,
-				9819BBD41F8B0C70004EEDA4 /* resources */,
-				9819BBC01F8B0969004EEDA4 /* AppDelegate.swift */,
 				9834CCCC1F9078710036298F /* PinTech-Bridging-Header.h */,
+				9819BBD41F8B0C70004EEDA4 /* resources */,
 			);
 			path = PinTech;
 			sourceTree = "<group>";

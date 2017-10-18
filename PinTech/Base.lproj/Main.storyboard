@@ -421,19 +421,12 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Longin" id="TAp-ds-lEZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRM-QX-h1r">
-                                <rect key="frame" x="66" y="97" width="224" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="loginbt"/>
-                                <connections>
-                                    <action selector="FacebookLoginBtn:" destination="x2z-QY-87B" eventType="touchUpInside" id="4yw-zC-gRc"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="fBX-Pi-wOE"/>
                     </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="showMain" id="oOo-LO-yCH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lO-fJ-Zji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -462,7 +455,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5w3-9R-MU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-800" y="-45"/>
+            <point key="canvasLocation" x="-1870" y="448"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -492,7 +485,6 @@
         <image name="e.png" width="2546" height="1410"/>
         <image name="home-7.png" width="30" height="30"/>
         <image name="icons8-Gg-50.png" width="50" height="50"/>
-        <image name="loginbt" width="666" height="162"/>
         <image name="message-7.png" width="30" height="30"/>
         <image name="paper-plane-7.png" width="30" height="30"/>
         <image name="search-7.png" width="30" height="30"/>

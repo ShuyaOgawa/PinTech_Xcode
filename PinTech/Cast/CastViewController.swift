@@ -12,6 +12,7 @@
 
 import UIKit
 
+
 class SecondViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     let cast_images = ["287ad159eefd720da612026042a18bb9--crows-woman-crush.jpg", "577d0a641500002a006c9d4d.jpeg", "images-23.jpeg", "images-24.jpeg", "images-25.jpeg", "images-26.jpeg", "maxresdefault.jpg" , "x01-veg-20161224-chloe.jpg.pagespeed.ic.7BB9vAtrWO.jpg"]
@@ -26,6 +27,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
