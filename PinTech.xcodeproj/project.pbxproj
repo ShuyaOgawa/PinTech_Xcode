@@ -30,6 +30,8 @@
 		9819BBF51F8BCA1E004EEDA4 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9819BBED1F8BCA1D004EEDA4 /* maxresdefault.jpg */; };
 		9819BBF61F8BCA1E004EEDA4 /* images-25.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9819BBEE1F8BCA1E004EEDA4 /* images-25.jpeg */; };
 		9819BBF71F8BCA1E004EEDA4 /* images-24.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9819BBEF1F8BCA1E004EEDA4 /* images-24.jpeg */; };
+		988B56561F973204006F5C14 /* pintech.png in Resources */ = {isa = PBXBuildFile; fileRef = 988B56551F973204006F5C14 /* pintech.png */; };
+		988B565A1F97CE83006F5C14 /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B56591F97CE83006F5C14 /* TapBarViewController.swift */; };
 		9890B6221F9319E800D7AA21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890B6211F9319E800D7AA21 /* LoginViewController.swift */; };
 		98DC015E1F8BD6ED008DB961 /* icons8-Gg-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DC015D1F8BD6EC008DB961 /* icons8-Gg-50.png */; };
 		98DC01601F8C5223008DB961 /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DC015F1F8C5223008DB961 /* circle-user-7.png */; };
@@ -68,6 +70,8 @@
 		9819BBEE1F8BCA1E004EEDA4 /* images-25.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-25.jpeg"; path = "../../../../../Downloads/images-25.jpeg"; sourceTree = "<group>"; };
 		9819BBEF1F8BCA1E004EEDA4 /* images-24.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-24.jpeg"; path = "../../../../../Downloads/images-24.jpeg"; sourceTree = "<group>"; };
 		9834CCCC1F9078710036298F /* PinTech-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinTech-Bridging-Header.h"; sourceTree = "<group>"; };
+		988B56551F973204006F5C14 /* pintech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pintech.png; path = ../../../../Xcode/SimpleBrowser/SimpleBrowser/Resources/pintech.png; sourceTree = "<group>"; };
+		988B56591F97CE83006F5C14 /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 		9890B6211F9319E800D7AA21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		98DC015D1F8BD6EC008DB961 /* icons8-Gg-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Gg-50.png"; path = "../../../../../Downloads/icons8-Gg-50.png"; sourceTree = "<group>"; };
 		98DC015F1F8C5223008DB961 /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-user-7.png"; path = "../../../../icon/iconbeast-lite-200/iconbeast lite 200 - png/circle-user-7.png"; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			children = (
 				9819BBC61F8B0969004EEDA4 /* Main.storyboard */,
 				9819BBC01F8B0969004EEDA4 /* AppDelegate.swift */,
+				988B56591F97CE83006F5C14 /* TapBarViewController.swift */,
 				9890B6201F9319D500D7AA21 /* Login */,
 				98DC01631F8C5B78008DB961 /* Reservation */,
 				9819BBE51F8BC926004EEDA4 /* Cast */,
@@ -132,6 +137,7 @@
 		9819BBD41F8B0C70004EEDA4 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				988B56551F973204006F5C14 /* pintech.png */,
 				98DC016B1F8C6B00008DB961 /* emoticon-smile-7.png */,
 				98DC016C1F8C6B00008DB961 /* paper-plane-7.png */,
 				98DC01691F8C5FC7008DB961 /* 21294254_1512791365409047_2922509238137782272_n.jpg */,
@@ -288,6 +294,7 @@
 				9819BBDD1F8B0DE8004EEDA4 /* icons8-ææä¸­-50.png in Resources */,
 				9819BBF21F8BCA1E004EEDA4 /* x01-veg-20161224-chloe.jpg.pagespeed.ic.7BB9vAtrWO.jpg in Resources */,
 				98DC015E1F8BD6ED008DB961 /* icons8-Gg-50.png in Resources */,
+				988B56561F973204006F5C14 /* pintech.png in Resources */,
 				9819BBF31F8BCA1E004EEDA4 /* 577d0a641500002a006c9d4d.jpeg in Resources */,
 				9819BBD81F8B0D1C004EEDA4 /* home-7.png in Resources */,
 				9819BBC81F8B0969004EEDA4 /* Main.storyboard in Resources */,
@@ -369,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988B565A1F97CE83006F5C14 /* TapBarViewController.swift in Sources */,
 				9890B6221F9319E800D7AA21 /* LoginViewController.swift in Sources */,
 				98DC01681F8C5E9A008DB961 /* MyPageViewController.swift in Sources */,
 				9819BBC51F8B0969004EEDA4 /* CastViewController.swift in Sources */,

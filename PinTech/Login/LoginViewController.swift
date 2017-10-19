@@ -4,7 +4,7 @@
 //
 //  Created by 小川秀哉 on 2017/10/15.
 //  Copyright © 2017年 Digital Circus Inc. All rights reserved.
-//
+//, FBSDKLoginButtonDelegate
 
 import UIKit
 import FBSDKCoreKit
@@ -12,12 +12,17 @@ import FBSDKLoginKit
 
 
 
-class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController {
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.ViewController = self
+    }
     
-    
-    
+    /*
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         print("User Logged In")
         if ((error) != nil)
@@ -34,34 +39,40 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
         }
     }
+ */
     
    
     override func viewDidAppear(_ animated: Bool) {
+       
         if (FBSDKAccessToken.current() != nil) {
             print("User Already Logged In")
             //メイン画面へ遷移
             self.performSegue(withIdentifier: "showMain", sender: self)
-            
+            // ログイン処理
+            var ud = UserDefaults.standard
+            ud.set(true, forKey: "isLogin")
         } else {
             print("User not Logged In")
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             self.view.addSubview(loginView)
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
-            loginView.delegate = self as! FBSDKLoginButtonDelegate
+//            loginView.delegate = self as! FBSDKLoginButtonDelegate
+            // ログイン処理
+            var ud = UserDefaults.standard
+            print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+            print(ud)
+            ud.set(true, forKey: "isLogin")
+            print(ud)
         }
     }
     
+  
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
+    /*
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
     }
+ */
 
 }

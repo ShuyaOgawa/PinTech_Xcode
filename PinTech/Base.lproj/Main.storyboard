@@ -39,7 +39,7 @@
                                         <color key="textColor" red="0.90746437820000003" green="0.48316281150000001" blue="0.87433751749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="オラウータン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFk-TK-x57">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFk-TK-x57">
                                         <rect key="frame" x="20" y="278" width="338" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.933148478" green="0.933148478" blue="0.933148478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,7 +77,7 @@
                                         <color key="textColor" red="0.26729552890000002" green="0.26729552890000002" blue="0.26729552890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21294254_1512791365409047_2922509238137782272_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Yln-NV-L5V">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yln-NV-L5V">
                                         <rect key="frame" x="107" y="30" width="160" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -137,6 +137,7 @@
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="user_image1" destination="Yln-NV-L5V" id="bZq-MT-DYT"/>
+                        <outlet property="user_name" destination="SFk-TK-x57" id="cDf-Lv-qdb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUO-X2-3zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="736.79999999999995" y="-433.58320839580216"/>
+            <point key="canvasLocation" x="1418" y="-448"/>
         </scene>
         <!--CastViewController-->
         <scene sceneID="wg7-f3-ORb">
@@ -457,10 +458,10 @@
             </objects>
             <point key="canvasLocation" x="-1870" y="448"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--TapBar-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TapBar" title="TapBar" id="49e-Tb-3d3" customClass="TapBarViewController" customModule="PinTech" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -480,7 +481,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="21294254_1512791365409047_2922509238137782272_n.jpg" width="480" height="480"/>
         <image name="circle-user-7.png" width="30" height="30"/>
         <image name="e.png" width="2546" height="1410"/>
         <image name="home-7.png" width="30" height="30"/>

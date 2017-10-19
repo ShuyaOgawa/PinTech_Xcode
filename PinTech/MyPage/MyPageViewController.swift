@@ -14,6 +14,7 @@ import FBSDKLoginKit
 class MyPageViewController: UIViewController {
     
     @IBOutlet weak var user_image1: UIImageView!
+    @IBOutlet weak var user_name: UILabel!
     
     var userProfile : NSDictionary!
     
@@ -22,6 +23,8 @@ class MyPageViewController: UIViewController {
         returnUserData()
         
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,7 +34,7 @@ class MyPageViewController: UIViewController {
     func returnUserData()
     {
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me",
-                                                                 parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"])
+                                                                 parameters: ["fields": "id, gender, name, first_name, last_name, picture.type(large), email"])
         graphRequest.start(completionHandler: { (connection, result, error) -> Void in
             if ((error) != nil)
             {
@@ -60,10 +63,19 @@ class MyPageViewController: UIViewController {
                         self.user_image1.layer.borderWidth = 3
                         self.user_image1.layer.cornerRadius = self.user_image1.frame.size.width / 2
                         self.user_image1.layer.masksToBounds = true
+                    
                     }
                     
                 }
-            
+                let first_name: String = self.userProfile["last_name"] as! String
+                let last_name: String = self.userProfile["first_name"] as! String
+                let user_name = last_name + first_name
+                print(user_name)
+                self.user_name.text = user_name
+                
+                let gender: String = self.userProfile["gender"] as! String
+                print(gender)
+                
                 
             }
         })
